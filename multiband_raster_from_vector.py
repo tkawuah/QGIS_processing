@@ -71,8 +71,8 @@ def array_to_tif(array, raster, dst_filename):
 
 
 #Get data 
-inRaster = "/Users/tylersmyrski/Desktop/jeeb/rasterize/S2_PS_drySeason_clipped.tif"
-inVector = "/Users/tylersmyrski/Desktop/jeeb/rasterize/S2_PS_drySeason_clipped_vectors.shp"
+inRaster = "/*.tif"
+inVector = "/*.shp"
 
 
 #Get vector layer attribute names 
@@ -98,4 +98,4 @@ fx_multi.shape
 
 
 # write raster
-array_to_tif(fx_multi.astype(np.float32), inRaster, '/Users/tylersmyrski/Desktop/jeeb/rasterize/fx_multi.tif')
+array_to_tif(fx_multi.astype(np.float32), inRaster, 'fx_multi.tif')
