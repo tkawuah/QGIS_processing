@@ -1,5 +1,6 @@
 #import modules 
 import gdal
+import gdalnumeric as gdn
 import ogr
 import numpy as np
 import tempfile
